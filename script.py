@@ -4,7 +4,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-file_path = r"C:\Users\Adam\Desktop\Hw3\Auto.csv"
+file_path = "Auto.csv"
 auto_data = pd.read_csv(file_path)
 
 auto_data["horsepower"] = pd.to_numeric(auto_data["horsepower"], errors="coerce")
